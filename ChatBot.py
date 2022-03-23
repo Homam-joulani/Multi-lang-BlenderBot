@@ -15,4 +15,5 @@ tokens = tokenizer(sent, return_tensors="pt")
 gen = model.generate(**tokens)
 
 # Decoding the model generated output
-tokenizer.decode(gen[0])
+result = tokenizer.decode(gen[0])
+print(result)
